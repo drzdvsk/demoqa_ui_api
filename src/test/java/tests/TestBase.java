@@ -1,0 +1,11 @@
+package tests;
+
+import org.junit.jupiter.api.BeforeAll;
+import io.restassured.RestAssured;
+
+public class TestBase {
+    @BeforeAll
+    public static void setUp() {
+        RestAssured.baseURI = "https://demoqa.com";
+    }
+}
